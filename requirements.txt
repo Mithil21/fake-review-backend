@@ -1,0 +1,13 @@
+tensorflow==2.5.0
+pytorch-lightning
+transformers
+flask
+beautifulsoup4
+datasets
+flask_cors 
+torch
+tqdm==4.64.1
+torchvision
+torchmetrics
+nltk
+requests

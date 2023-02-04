@@ -1,21 +1,20 @@
-from email.policy import strict
-from imp import new_module
-from cv2 import log
-import torch
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import webScrapping as ws
-import trainer as tr
+import numpy as np
 import pandas as pd
-from tqdm.auto import tqdm
+import pytorch_lightning as pl
 # from appDeclaration import my_app
 import torch
-import numpy as np
-import pytorch_lightning as pl
 import torchmetrics
-from torchvision import models
-from pytorch_lightning.callbacks import ModelCheckpoint, EarlyStopping
-from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler, Dataset
-from transformers import RobertaTokenizerFast, RobertaForSequenceClassification, ElectraTokenizer, ElectraForSequenceClassification,AdamW,get_linear_schedule_with_warmup
+# from pytorch_lightning.callbacks import EarlyStopping, ModelCheckpoint
+from torch.utils.data import (DataLoader,
+                              SequentialSampler, TensorDataset)
+from tqdm.auto import tqdm
+from transformers import (AdamW, RobertaForSequenceClassification,
+                          RobertaTokenizerFast,
+                          get_linear_schedule_with_warmup)
+
+import trainer as tr
+import webScrapping as ws
+
 ####################################################################################################
 # tokenizer = AutoTokenizer.from_pretrained("Mithil/Bert")
 

@@ -2,11 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 # from selectorlib import Extractor
 
-# import json 
-from time import sleep
-# import csv
-from dateutil import parser as dateparser
-
 cust_name = []
 HEADERS = ({'User-Agent':
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) \
