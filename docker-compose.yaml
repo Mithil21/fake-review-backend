@@ -6,7 +6,7 @@ services:
         container_name: backend
         restart: always
         ports:
-            - 8082:8082
+            - 5000:5000
     app-frontend:
         # build: /
         image: macroplan
