@@ -111,7 +111,7 @@ def run_inference(data_dir, model, device, batch_size:int = 32):
         # model.load_state_dict(torch.load('C:/Users/mithi/Desktop/Final Year Project/Extension/colorlib-search-3/colorlib-search-3/results/Output/Trainer.ckpt', map_location=torch.device('cpu')))
         # model = model['state_dict']
         # C:/Users/mithi/Desktop/Final Year Project/Extension/colorlib-search-3/colorlib-search-3/results/Output/Trainer1.ckpt
-        model.load_state_dict(torch.load('C:/Users/mithil.baria/Downloads/Extras/Personal/MyProject-20221020T144919Z-002/Tb/my_model/version_0/checkpoints/model_best-v'+str(fold)+'.ckpt', map_location=torch.device('cpu'))['state_dict'])
+        model.load_state_dict(torch.load('Trainer1.ckpt', map_location=torch.device('cpu'))['state_dict'])
         model.eval()
         model.to(device)
 
